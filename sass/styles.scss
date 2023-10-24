@@ -1,0 +1,57 @@
+@import url('./header/header.css');
+@import url('./work/work.css');
+@import url('./customers/customers.css');
+@import url('./contact/contact.css');
+@import url('./footer/footer.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf'), format(trutype);
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%flex-change {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$main-color :#0082F4;
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.btn__global {
+    border-radius: 6px;
+    background-color: $main-color;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar {
+    @extend %flex-change;
+    align-items: center;
+    justify-content: space-evenly;
+}

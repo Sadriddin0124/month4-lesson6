@@ -1,0 +1,30 @@
+@media (max-width: 990px) {
+  .customers__top {
+    justify-content: center;
+  }
+}
+@media (max-width: 789px) {
+  .header__title, .work__title, .customers__title, .contact__title {
+    font-size: 28px;
+  }
+  .navbar__btn, .navbar__list {
+    display: none;
+  }
+  .bars div {
+    display: block;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .contact__input {
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 447px) {
+  .header__text {
+    text-align: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=media.css.map */

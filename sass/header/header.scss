@@ -1,0 +1,162 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%flex-change {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%main-color {
+    background-color: #0082F4;
+}
+
+%title {
+    color: #000;
+    font-size: 60.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px; /* 78.715px */
+}
+
+%subtitle {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 24px */
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.bars div{
+    display: none;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    margin: 6px;
+}
+
+.btn__global {
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    @extend %main-color;
+}
+
+.navbar__btn {
+    padding: 14px 20px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 40px 10px 40px;
+    @extend %flex-change;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #0284f525;
+}
+
+.navbar__list {
+    @extend %flex-center;
+    gap: 40px;
+}
+
+.navbar__links {
+    color: black;
+    font-size: 20px;
+}
+
+.active {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #0082F4;
+    color: #0082F4;
+}
+
+.header {
+    padding: 150px 20px 40px 20px;
+    width: 100%;
+    min-height: 100vh;
+    @extend %flex-center;
+    flex-wrap: wrap-reverse;
+    gap: 100px;
+}
+
+.header__text {
+    max-width: 531px;
+    width: 100%;
+    @extend %flex-column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.header__top {
+    color: #0080FD;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.header__title {
+    @extend %title;
+    .business {
+        color: #0082F4;
+    }
+}
+
+.header__subtitle {
+    @extend %subtitle;
+    opacity: 0.6;
+}
+
+.header__buttons {
+    @extend %flex-center;
+    gap: 30px;
+    .header__btn {
+        padding: 20px 45px;
+    }
+    .btn__white {
+        @extend %flex-center;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid #0082f422;
+        // opacity: 0.1;
+        background-color: #fff;
+    }
+}
+
+.header__img {
+    max-width: 500px;
+    img {
+        width: 100%;
+    }
+}
+
+.about {
+    padding: 40px 20px;
+    width: 100%;
+    min-height: 100vh;
+    @extend %flex-center;
+    // flex-wrap: wrap-reverse;
+    gap: 100px;
+}

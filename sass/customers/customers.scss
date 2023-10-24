@@ -1,0 +1,129 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%flex-change {
+    display: flex;
+    // flex-wrap: wrap;
+}
+
+%main-color {
+    background-color: #0082F4;
+}
+
+%title {
+    color: #000;
+    font-size: 48.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px; /* 78.715px */
+}
+
+%subtitle {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 24px */
+}
+
+.customers {
+    @extend %flex-column;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10px;
+}
+
+.customers__top {
+    @extend %flex-change;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    width: 100%;
+}
+
+.customers__title {
+    @extend %title;
+}
+
+.customers__cards {
+    @extend %flex-center;
+    gap: 60px;
+}
+
+.customers__card {
+    position: relative;
+    @extend %flex-change;
+    align-items: center;
+    gap: 73px;
+    padding: 30px 0;
+    max-width: 420px;
+    height: 283px;
+    border-radius: 10px;
+    border: 1px solid #0082f41c;
+}
+
+.customers__card::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #0082F4;
+    border-radius: 10px 0 0 10px;
+}
+
+.customers__card-img {
+    position: relative;
+    left: 50px;
+    z-index: 2;
+    img {
+        // padding: 1px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+}
+
+.customers__card-text {
+    @extend %flex-column;
+    gap: 45px;
+    width: 220px;
+}
+
+.customers__card-name {
+    @extend %flex-column;
+    gap: 10px;
+    h5 {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+        @extend %flex-change;
+        align-items: center;
+        gap: 5px;
+    }
+    .line {
+        display: block;
+        height: 1px;
+        width: 30px;
+        background: #000;
+    }
+    p {
+        opacity: 0.5;
+        font-size: 20px;
+        margin-left: 36px;
+    }
+}
+
+

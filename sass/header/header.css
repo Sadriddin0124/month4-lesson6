@@ -1,0 +1,148 @@
+.about, .header__buttons .btn__white, .header__buttons, .header, .navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn__global {
+  background-color: #0082F4;
+}
+
+.header__title {
+  color: #000;
+  font-size: 60.55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px; /* 78.715px */
+}
+
+.header__subtitle {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 24px */
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.bars div {
+  display: none;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  margin: 6px;
+}
+
+.btn__global {
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar__btn {
+  padding: 14px 20px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 40px 10px 40px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(2, 132, 245, 0.1450980392);
+}
+
+.navbar__list {
+  gap: 40px;
+}
+
+.navbar__links {
+  color: black;
+  font-size: 20px;
+}
+
+.active {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #0082F4;
+  color: #0082F4;
+}
+
+.header {
+  padding: 150px 20px 40px 20px;
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap-reverse;
+  gap: 100px;
+}
+
+.header__text {
+  max-width: 531px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.header__top {
+  color: #0080FD;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.header__title .business {
+  color: #0082F4;
+}
+
+.header__subtitle {
+  opacity: 0.6;
+}
+
+.header__buttons {
+  gap: 30px;
+}
+.header__buttons .header__btn {
+  padding: 20px 45px;
+}
+.header__buttons .btn__white {
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 130, 244, 0.1333333333);
+  background-color: #fff;
+}
+
+.header__img {
+  max-width: 500px;
+}
+.header__img img {
+  width: 100%;
+}
+
+.about {
+  padding: 40px 20px;
+  width: 100%;
+  min-height: 100vh;
+  gap: 100px;
+}/*# sourceMappingURL=header.css.map */
